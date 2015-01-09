@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="com.ibm.ws.ast.st.v6.AppClientLaunchConfigurationType">
+<booleanAttribute key="org.eclipse.debug.ui.private" value="true"/>
+</launchConfiguration>

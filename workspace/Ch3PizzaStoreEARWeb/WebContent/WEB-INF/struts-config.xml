@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+	<!-- Data Sources -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Form Beans -->
+	<form-beans>
+		<form-bean name="SubmitForm" type="ch3.strutstutorial.forms.SubmitForm">
+		</form-bean>
+	</form-beans>
+
+	<!-- Global Exceptions -->
+	<global-exceptions>
+	</global-exceptions>
+
+	<!-- Global Forwards -->
+	<global-forwards>
+	</global-forwards>
+
+	<!-- Action Mappings -->
+	<action-mappings>
+		<action name="SubmitForm" path="/submit" scope="session" type="ch3.strutstutorial.actions.SubmitAction" input="/orderpage.jsp">
+			<forward contextRelative="true" name="success" path="/orderconfirm.jsp">
+			</forward>
+		</action>
+	</action-mappings>
+
+	<!-- Message Resources -->
+	<message-resources parameter="ch3.strutstutorial.resources.ApplicationResources"/>
+
+</struts-config>

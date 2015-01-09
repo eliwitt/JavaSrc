@@ -1,0 +1,14 @@
+/StockQuoteClient/WebContent/WEB-INF/wsdl/StockQuote.wsdl
++
+/StockQuoteClient/WebContent/samples.StockQuoteProxy
++6
+/StockQuoteClient/WebContent/WEB-INF/web.xml
++
+/StockQuoteClient/WebContent/WEB-INF/StockQuote_mapping.xml
++
+/StockQuoteClient/.website-config
++
+/StockQuoteClient/WebContent/theme/Master.css
++6
+/StockQuoteClient/WebContent/MyStocks.jsp
++

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="src" path=""/>
+    <classpathentry kind="var" path="JRE_LIB" rootpath="JRE_SRCROOT" sourcepath="JAVA_HOME"/>
+    <classpathentry kind="lib" path="C:/j2sdkee1.3.1/lib/j2ee.jar"/>
+    <classpathentry kind="output" path=""/>
+</classpath>

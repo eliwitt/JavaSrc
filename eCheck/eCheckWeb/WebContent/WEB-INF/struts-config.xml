@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+	<!-- Data Sources -->
+	<data-sources>
+	</data-sources>
+	<form-beans>
+		<form-bean name="SubInputForm" 
+		type="com.bcbst.ememberpayweb.forms.SubInputForm">
+		</form-bean>
+		<form-bean name="ReadPayment" 
+		type="com.bcbst.ememberpayweb.forms.SubmitPayment">
+		</form-bean>
+		<form-bean name="RegPayment" 
+		type="com.bcbst.ememberpayweb.forms.RegPayment">
+		</form-bean>
+		<form-bean name="EnterCardInfo" 
+		type="com.bcbst.ememberpayweb.forms.SubCCInputForm">
+		</form-bean>
+		<form-bean name="ApprovePayment" 
+		type="com.bcbst.ememberpayweb.forms.VerifyPayment">
+		</form-bean>
+		<form-bean name="ProcessPayment" 
+		type="com.bcbst.ememberpayweb.forms.ProcessPayment">
+		</form-bean>
+		<form-bean name="subscribereReg" 
+		type="com.bcbst.echeckweb.forms.SubscribereReg">
+		</form-bean>
+	</form-beans>
+
+	<!-- Form Beans -->
+
+	<!-- Global Exceptions -->
+	<global-exceptions>
+	</global-exceptions>
+
+	<!-- Global Forwards -->
+	<global-forwards>
+	</global-forwards>
+
+	<!-- Action Mappings -->
+	<action-mappings>
+		<action name="SubInputForm" path="/submit" scope="session" type="com.bcbst.ememberpayweb.actions.SubInputAction" input="/subscriberInput.jsp">
+			<forward name="success" path="/subscriberPay.jsp">
+			</forward>
+		</action>
+		<action name="ReadPayment" path="/setUpPayForm" scope="session" type="com.bcbst.ememberpayweb.actions.SetUpPayFormAction" input="/subscriberPay.jsp">
+			<forward name="continue" path="/subscriberCard.jsp"></forward>
+			<forward name="register" path="/subscribereReg.jsp"></forward>
+			<forward name="echeck" path="/checkAccount.jsp"></forward>
+		</action>
+		<action name="RegPayment" path="/setUpRegForm" scope="session" type="com.bcbst.ememberpayweb.actions.SetUpRegFormAction" input="/subscriberReg.jsp">
+			<forward name="ccard" path="/subscriberVerify.jsp"></forward>
+			<forward name="cancel" path="/subscriberPay.jsp"></forward>
+		</action>
+		<action name="EnterCardInfo" path="/subVerify" scope="session" type="com.bcbst.ememberpayweb.actions.CompCCAction" input="/subscriberCard.jsp">
+			<forward name="verifypay" path="/subscriberVerify.jsp"></forward>
+			<forward name="cancel" path="/subscriberPay.jsp"></forward>
+		</action>
+		<action name="ApprovePayment" path="/subConfirm" scope="session" type="com.bcbst.ememberpayweb.actions.VerificationAction" input="/subscriberVerify.jsp">
+			<forward name="procpay" path="/payConfirm.jsp"></forward>
+			<forward name="cancel" path="/subscriberPay.jsp"></forward>
+		</action>   		
+		<action name="ProcessPayment" path="/payconfirm" scope="session" type="com.bcbst.ememberpayweb.actions.PayconfirmAction" input="/payConfirm.jsp">
+			<forward name="cancel" path="/subscriberPay.jsp"></forward>
+		</action>
+		<action name="RegisterInstr" path="/payeCheck" scope="session" type="com.bcbst.echeckweb.actions.PayeCheckAction" input="/subscribereReg.jsp">
+			<forward name="cancel" path="/subscriberPay.jsp"></forward>
+		</action>
+	</action-mappings>
+
+	<!-- Message Resources -->
+	<message-resources parameter="com.bcbst.ememberpayweb.resources.ApplicationResources"/>
+
+</struts-config>

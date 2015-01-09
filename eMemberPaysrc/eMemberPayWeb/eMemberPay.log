@@ -1,0 +1,4 @@
+[2008-08-26 08:16:21,198] com.bcbst.ememberpayweb.TestLogging INFO  - Test logging
+[2008-08-26 08:16:21,198] com.bcbst.ememberpayweb.TestLogging ERROR - Test logging
+[2008-08-26 08:16:21,198] com.bcbst.ememberpayweb.TestLogging WARN  - Test logging
+[2008-08-26 08:16:21,198] com.bcbst.ememberpayweb.TestLogging DEBUG - Test logging

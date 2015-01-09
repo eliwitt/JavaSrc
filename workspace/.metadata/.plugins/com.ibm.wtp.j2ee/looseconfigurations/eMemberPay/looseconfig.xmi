@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.etools.j2ee.commonarchivecore.looseconfig:LooseApplication xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.etools.j2ee.commonarchivecore.looseconfig="commonarchive.looseconfig.xmi" uri="C:\Documents and Settings\j13155w\IBM\rationalsdp6.0\workspace\eMemberPay" binariesPath="C:\Documents and Settings\j13155w\IBM\rationalsdp6.0\workspace\eMemberPay" resourcesPath="C:\Documents and Settings\j13155w\IBM\rationalsdp6.0\workspace\eMemberPay">
+  <looseArchives xsi:type="com.ibm.etools.j2ee.commonarchivecore.looseconfig:LooseWARFile" uri="eMemberPayWeb.war" binariesPath="C:\Documents and Settings\j13155w\IBM\rationalsdp6.0\workspace\eMemberPayWeb\WebContent" resourcesPath="C:\Documents and Settings\j13155w\IBM\rationalsdp6.0\workspace\eMemberPayWeb\WebContent"/>
+</com.ibm.etools.j2ee.commonarchivecore.looseconfig:LooseApplication>

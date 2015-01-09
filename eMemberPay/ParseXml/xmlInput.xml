@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SDP_XML_RESP 
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='sdp_xml_resp.xsd'>
+<RESP_CODE>AA</RESP_CODE>
+<CONFIRMATION_ID>24326524</CONFIRMATION_ID>
+<RESP_MESSAGE></RESP_MESSAGE>
+</SDP_XML_RESP>

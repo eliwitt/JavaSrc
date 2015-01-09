@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<multisite-config>
+    <project-data name="eTestProjectWeb">
+        <data>
+            <item name="eTestProjectWeb" stamp="1536"/>
+        </data>
+    </project-data>
+    <project-data name="eMemberPayWeb">
+        <data>
+            <item name="eMemberPayWeb" stamp="1076"/>
+        </data>
+    </project-data>
+    <project-data name="BAWebTestsite">
+        <data>
+            <item name="BAWebTestsite" stamp="11238"/>
+        </data>
+    </project-data>
+    <project-data name="Ch3PizzaStoreEARWeb">
+        <data>
+            <item name="Ch3PizzaStoreEARWeb" stamp="65"/>
+        </data>
+    </project-data>
+    <project-data name="StockQuoteClient">
+        <data>
+            <item name="StockQuoteClient" stamp="4548"/>
+        </data>
+    </project-data>
+    <project-data name="eCheckWeb">
+        <data>
+            <item name="eCheckWeb" stamp="12092"/>
+        </data>
+    </project-data>
+    <project-data name="StockQuote">
+        <data>
+            <item name="StockQuote" stamp="4114"/>
+        </data>
+    </project-data>
+</multisite-config>

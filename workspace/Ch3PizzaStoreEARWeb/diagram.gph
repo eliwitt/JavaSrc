@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-diagram PUBLIC "-//IBM//DTD Web Diagram 1.1//EN" "http://www.ibm.com/dtd/web-diagram_1_1.dtd">
+<web-diagram>
+    <properties>
+        <property name="Module Name" value="&lt;default module&gt;"/>
+    </properties>
+    <nodes>
+        <node id="n0" type="com.ibm.etools.struts.graphical.providers.model.ActionMappingProvider">
+            <properties>
+                <property name="Action Mapping Name" value="/submit"/>
+                <property name="hidden" value="false"/>
+            </properties>
+            <location x="78" y="134"/>
+        </node>
+        <node id="n1" type="com.ibm.etools.model2.web.providers.model.WebPageProvider">
+            <properties>
+                <property name="Web Page Path" value="/orderconfirm.jsp"/>
+                <property name="hidden" value="false"/>
+            </properties>
+            <location x="356" y="365"/>
+        </node>
+        <node id="n2" type="com.ibm.etools.model2.web.providers.model.WebPageProvider">
+            <properties>
+                <property name="Web Page Path" value="/orderpage.jsp"/>
+                <property name="hidden" value="false"/>
+            </properties>
+            <location x="154" y="365"/>
+        </node>
+        <node id="n3" type="com.ibm.etools.struts.graphical.providers.model.FormBeanProvider">
+            <properties>
+                <property name="Form Bean Name" value="SubmitForm"/>
+                <property name="Form Bean Scope" value="session"/>
+                <property name="hidden" value="false"/>
+            </properties>
+            <location x="252" y="164"/>
+        </node>
+    </nodes>
+    <edges>
+        <edge source="n0" target="n1" type="com.ibm.etools.struts.graphical.providers.edge.ActionMappingLocalForwardEdgeProvider">
+            <properties>
+                <property name="Forward Name" value="success"/>
+            </properties>
+        </edge>
+        <edge source="n0" target="n2" type="com.ibm.etools.struts.graphical.providers.edge.ActionMappingInputEdgeProvider">
+            <properties/>
+        </edge>
+        <edge source="n0" target="n3" type="com.ibm.etools.struts.graphical.providers.edge.FormBeanEdgeProvider">
+            <properties/>
+        </edge>
+        <edge source="n2" target="n0" type="com.ibm.etools.model2.web.providers.edge.WebPageLinkEdgeProvider">
+            <properties/>
+        </edge>
+    </edges>
+</web-diagram>

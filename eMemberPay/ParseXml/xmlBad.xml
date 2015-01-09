@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SDP_XML_RESP 
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='sdp_xml_resp.xsd'>
+<RESP_CODE>DE</RESP_CODE>
+<ERRORS>
+<ERROR>
+<CODE>5678</CODE><MESSAGE>You are a bum </MESSAGE>
+</ERROR>
+</ERRORS>
+<RESP_MESSAGE>Transaction Declined</RESP_MESSAGE>
+</SDP_XML_RESP>

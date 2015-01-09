@@ -1,0 +1,16 @@
+/StockQuote/WebContent/WEB-INF/samples.StockQuote
++1
+/StockQuote/WebContent/WEB-INF/web.xml
++
+/StockQuote/WebContent/wsdl/samples/StockQuote.wsdl
++
+/StockQuote/.website-config
++
+/StockQuote/WebContent/WEB-INF/wsdl/StockQuote.wsdl
++
+/StockQuote/WebContent/WEB-INF/webservices.xml
++
+/StockQuote/WebContent/theme/Master.css
++
+/StockQuote/WebContent/WEB-INF/StockQuote_mapping.xml
++

@@ -1,0 +1,1 @@
+<%@ taglib uri="taglib.tld" prefix="jwTag" %><html><head><title>Using a Custom Tag with a Body</title></head><body><jwTag:SimpleSteve level="1">This text is H1</jwTag:SimpleSteve><hr><jwTag:SimpleSteve>While this is H2</jwTag:SimpleSteve>The proceeding text was modified using a custom tag library.</body></html>

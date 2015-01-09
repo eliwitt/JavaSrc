@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.ws.rd.websphere.wtemodel:WTEConfiguration xmlns:com.ibm.ws.rd.websphere.wtemodel="http:///com/ibm/ws/rd/websphere/wtemodel.ecore">
+  <servers name="server_952580336" id="WebSphere Application Server v6.0" description="" autoPublishInterval="1" autoPublish="true">
+    <publishable>
+      <projects name="Ch3PizzaStoreEAR"/>
+      <projects name="eMemberPay"/>
+      <projects name="eTestProject"/>
+      <projects name="StockQuoteEAR"/>
+      <projects name="StockQuoteClientEAR"/>
+      <projects name="BAWebTest"/>
+      <projects name="eCheck"/>
+    </publishable>
+    <configuration name="server1" host="localhost" jmxPort="2809" watchInterval="1" userName="" password="{xor}" connectionType="0"/>
+  </servers>
+</com.ibm.ws.rd.websphere.wtemodel:WTEConfiguration>

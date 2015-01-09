@@ -1,0 +1,29 @@
+<html>
+<script language="JavaScript" src="NSMenus.js">
+</script>
+<script language="JavaScript">
+    //-----------------------------------------
+    function setMenus() {
+      menuBackColor = "#ffffff";
+      menuForeColor = "#FFFF00";
+      menuHighColor = "#ffc000";
+      menuX = 50;
+      menuY = 100;
+      menuWidth = 200;
+      menuHeight = 20;
+      menuBottom = 300;
+      
+       var index = 0;
+       addMenu("Lab Software", index++, "http://labsoftware.com");
+       addMenu("Connecticut Swimming", index++,"http://ctswim.org");
+       addMenu("Amazon", index++, "http://amazon.com");
+       addMenu("US Postal Service", index++, "http://usps.gov");
+       drawMenus();
+    }
+</script>
+<style> A
+ {text-decoration:none}
+</style>
+<body onLoad="setMenus()">
+<h1> Favorite Sites</h1>
+</body></html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application id="Application_ID" version="1.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/application_1_4.xsd">
+    <display-name>eMemberPay</display-name>
+    <module id="WebModule_1196799237838">
+    	<web>
+    		<web-uri>eMemberPayWeb.war</web-uri>
+    		<!-- When we test from our local machine the 
+    		root should be the following:
+    		
+    		eMemberPay
+    		
+    		When we create the EAR file from deploying it 
+    		should be the following:
+    		
+    		secure/restricted/apps/eMemberPay
+    		
+    		This is due to the set up on WAS for the BlueAccess site.
+    		To change this go inside RAD and select the eMwmberPayWeb folder.
+    		right-click it and select properties then from the list on the left 
+    		hand side select J2EE.  Then change the context root there.
+    		-->
+    		<context-root>eMemberPay</context-root>
+    	</web>
+    </module>
+</application>

@@ -1,0 +1,58 @@
+package samples;
+
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.io.StreamTokenizer;
+import java.net.URL;
+
+/**
+ * Java class that gets a stock price quote given a symbol.
+ */
+public class StockQuote
+{
+
+ /**
+  * Gets the price for a stock.
+  *
+  * @param the String stock symbol, e.g. "IBM"
+  * @return the stock price
+  */
+
+ public float getQuote(String symbol) throws Exception {
+
+  URL url = new URL(BASE_URL + symbol);
+  float tmpprice = (float)7.00;
+  return tmpprice;
+ 
+ }
+
+ private String BASE_URL =
+     "http://finance.yahoo.com/d/quotes.csv?f=sl1d1t1c1ohgv&e=.csv&s=";
+ 
+ private float deadcode(String symbol) throws Exception{
+ 	 URL url = new URL(BASE_URL + symbol);
+ 	 // get the quote as a comma separated value string, as in this example:
+ 	  // "IBM",80.85,"11/6/2002","2:20pm",-0.68,80.80,81.500,80.10,5697700
+
+ 	  InputStream is = url.openStream();
+ 	  Reader reader = new InputStreamReader(is);
+ 	  StreamTokenizer st = new StreamTokenizer(reader);
+
+ 	  // get the symbol string token, e.g. IBM
+ 	  st.nextToken();
+ 	  String outSymbol = st.sval;
+ 	  if (!symbol.equalsIgnoreCase(outSymbol)) {
+ 	     throw new Exception("Wrong symbol received: " + outSymbol);
+ 	  }
+
+ 	  // skip the comma token and get the price number token, e.g. 80.85
+ 	  //st.nextToken();
+ 	  st.nextToken();
+ 	  float price = (float) st.nval;
+
+ 	  reader.close();
+ 	  return price;
+ }
+ 
+}

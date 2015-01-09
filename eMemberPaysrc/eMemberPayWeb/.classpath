@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="JavaSource"/>
+	<classpathentry exported="true" kind="lib" path="imported_classes"/>
+	<classpathentry sourcepath="WebContent/WEB-INF/lib/commons-beanutils.jar" kind="lib" path="WebContent/WEB-INF/lib/commons-beanutils.jar"/>
+	<classpathentry sourcepath="WebContent/WEB-INF/lib/commons-collections.jar" kind="lib" path="WebContent/WEB-INF/lib/commons-collections.jar"/>
+	<classpathentry sourcepath="WebContent/WEB-INF/lib/commons-digester.jar" kind="lib" path="WebContent/WEB-INF/lib/commons-digester.jar"/>
+	<classpathentry sourcepath="WebContent/WEB-INF/lib/commons-fileupload.jar" kind="lib" path="WebContent/WEB-INF/lib/commons-fileupload.jar"/>
+	<classpathentry sourcepath="WebContent/WEB-INF/lib/commons-lang.jar" kind="lib" path="WebContent/WEB-INF/lib/commons-lang.jar"/>
+	<classpathentry sourcepath="WebContent/WEB-INF/lib/commons-logging.jar" kind="lib" path="WebContent/WEB-INF/lib/commons-logging.jar"/>
+	<classpathentry sourcepath="WebContent/WEB-INF/lib/commons-validator.jar" kind="lib" path="WebContent/WEB-INF/lib/commons-validator.jar"/>
+	<classpathentry sourcepath="WebContent/WEB-INF/lib/jakarta-oro.jar" kind="lib" path="WebContent/WEB-INF/lib/jakarta-oro.jar"/>
+	<classpathentry sourcepath="WebContent/WEB-INF/lib/struts.jar" kind="lib" path="WebContent/WEB-INF/lib/struts.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/WebSphere v6 JRE"/>
+	<classpathentry kind="con" path="com.ibm.wtp.server.java.core.container/com.ibm.ws.ast.st.runtime.core.runtimeTarget.v60/was.base.v6"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/log4j-1.2.7.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/com.bcbst.BankServ.jar"/>
+	<classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
+</classpath>

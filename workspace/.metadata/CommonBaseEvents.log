@@ -1,0 +1,468 @@
+<CommonBaseEvent creationTime="2007-11-29T12:58:17.827Z" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>1</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>10</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>AUDIT</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>850</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.ws.sm.workspace.impl.WorkSpaceManagerImpl</values>
+	</extendedDataElements>
+	<sourceComponentId component="Logging" componentIdType="Application" executionEnvironment="Java" location="10.1.6.121" locationType="IPV4" subComponent="Logger" componentType="Logging_Application"/>
+	<msgDataElement>
+		<msgCatalogId>WKSP0023I: Workspace configuration consistency check is disabled.</msgCatalogId>
+		<msgCatalogType>Java</msgCatalogType>
+		<msgCatalog>com.ibm.ws.sm.workspace.impl.workspace_NLS</msgCatalog>
+	</msgDataElement>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2007-11-29T12:58:21.733Z" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>2</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>10</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>WARNING</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>900</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.ws.management.application.sync.AppBinaryProcessor</values>
+	</extendedDataElements>
+	<sourceComponentId component="Logging" componentIdType="Application" executionEnvironment="Java" location="10.1.6.121" locationType="IPV4" subComponent="Logger" componentType="Logging_Application"/>
+	<msgDataElement>
+		<msgCatalogTokens value="java.lang.ClassNotFoundException: com.ibm.ws.security.authorize.AppInstallNotify&#xD;&#xA;&#x9;at java.lang.Class.forNameImpl(Native Method)&#xD;&#xA;&#x9;at java.lang.Class.forName(Class.java:115)&#xD;&#xA;&#x9;at com.ibm.ws.management.application.sync.AppBinaryProcessor.&lt;init&gt;(AppBinaryProcessor.java:173)&#xD;&#xA;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#xD;&#xA;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:80)&#xD;&#xA;&#x9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:44)&#xD;&#xA;&#x9;at java.lang.reflect.Constructor.newInstance(Constructor.java:315)&#xD;&#xA;&#x9;at com.ibm.ws.management.repository.FileRepository.initialize(FileRepository.java:219)&#xD;&#xA;&#x9;at com.ibm.ws.management.repository.client.LocalConfigRepositoryClient.connect(LocalConfigRepositoryClient.java:55)&#xD;&#xA;&#x9;at com.ibm.websphere.management.repository.client.ConfigRepositoryClientFactory.getConfigRepositoryClient(ConfigRepositoryClientFactory.java:48)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceMasterRepositoryAdapter.getRepository(WorkSpaceMasterRepositoryAdapter.java:185)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceMasterRepositoryAdapter.getDefaultRepository(WorkSpaceMasterRepositoryAdapter.java:174)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceMasterRepositoryAdapter.getDefaultMetaData(WorkSpaceMasterRepositoryAdapter.java:136)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceMasterRepositoryAdapter.getMetaData(WorkSpaceMasterRepositoryAdapter.java:1009)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.metadata.RepositoryMetaDataFactory.getMetaData(RepositoryMetaDataFactory.java:106)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.metadata.RepositoryMetaDataFactory.getMetaData(RepositoryMetaDataFactory.java:92)&#xD;&#xA;&#x9;at com.ibm.ws.management.configarchive.ConfigArchiveRepositoryAdapter.getDefaultMetaData(ConfigArchiveRepositoryAdapter.java:251)&#xD;&#xA;&#x9;at com.ibm.ws.management.configarchive.ConfigArchiveRepositoryAdapter.getMetaData(ConfigArchiveRepositoryAdapter.java:244)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.getMetaData(WorkSpaceImpl.java:104)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.getRootContextType(WorkSpaceImpl.java:305)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.createRootContext(WorkSpaceImpl.java:180)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.getRootContext(WorkSpaceImpl.java:295)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.restore(WorkSpaceImpl.java:431)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceManagerImpl.createWorkSpace(WorkSpaceManagerImpl.java:150)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceManagerImpl.getWorkSpace(WorkSpaceManagerImpl.java:186)&#xD;&#xA;&#x9;at com.ibm.ws.management.configarchive.ConfigArchiveComposer.loadConfigArchive(ConfigArchiveComposer.java:146)&#xD;&#xA;&#x9;at com.ibm.ws.management.configarchive.ApplicationConfiguratorImpl.&lt;init&gt;(ApplicationConfiguratorImpl.java:91)&#xD;&#xA;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#xD;&#xA;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:80)&#xD;&#xA;&#x9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:44)&#xD;&#xA;&#x9;at java.lang.reflect.Constructor.newInstance(Constructor.java:315)&#xD;&#xA;&#x9;at com.ibm.wsspi.configarchive.ApplicationConfigurator.getInstance(ApplicationConfigurator.java:42)&#xD;&#xA;&#x9;at com.ibm.ws.ast.st.enhanced.ear.internal.config.ApplicationConfiguratorModel.init(Unknown Source)&#xD;&#xA;&#x9;at com.ibm.ws.ast.st.enhanced.ear.internal.config.ApplicationConfiguratorModel.&lt;init&gt;(Unknown Source)&#xD;&#xA;&#x9;at com.ibm.ws.ast.st.enhanced.ear.ui.internal.editor.PageApplicationServer.createClient(Unknown Source)&#xD;&#xA;&#x9;at com.ibm.etools.emf.workbench.ui.custom.widgets.CommonPageForm.createInnerSections(Unknown Source)&#xD;&#xA;&#x9;at com.ibm.etools.emf.workbench.ui.presentation.EditModelMultiPageEditorPart.pageChange(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.part.MultiPageEditorPart$2.widgetSelected(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.notifyListeners(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.custom.CTabFolder.setSelection(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.custom.CTabFolder.onMouse(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.custom.CTabFolder$1.handleEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.internal.ide.IDEApplication.run(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.core.internal.runtime.PlatformActivator$1.run(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:273)&#xD;&#xA;&#x9;at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:129)&#xD;&#xA;&#x9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;&#xA;&#x9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:85)&#xD;&#xA;&#x9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:58)&#xD;&#xA;&#x9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:60)&#xD;&#xA;&#x9;at java.lang.reflect.Method.invoke(Method.java:391)&#xD;&#xA;&#x9;at org.eclipse.core.launcher.Main.basicRun(Main.java:185)&#xD;&#xA;&#x9;at org.eclipse.core.launcher.Main.run(Main.java:704)&#xD;&#xA;&#x9;at org.eclipse.core.launcher.Main.main(Main.java:688)&#xD;&#xA;"/>
+		<msgCatalogId>ADMA7012E</msgCatalogId>
+		<msgCatalogType>Java</msgCatalogType>
+		<msgCatalog>com.ibm.ws.management.resources.AppDeploymentMessages</msgCatalog>
+	</msgDataElement>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2007-11-29T12:58:25.155Z" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>3</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>10</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>AUDIT</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>850</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.ws.sm.workspace.impl.WorkSpaceManagerImpl</values>
+	</extendedDataElements>
+	<sourceComponentId component="Logging" componentIdType="Application" executionEnvironment="Java" location="10.1.6.121" locationType="IPV4" subComponent="Logger" componentType="Logging_Application"/>
+	<msgDataElement>
+		<msgCatalogId>WKSP0023I: Workspace configuration consistency check is enabled.</msgCatalogId>
+		<msgCatalogType>Java</msgCatalogType>
+		<msgCatalog>com.ibm.ws.sm.workspace.impl.workspace_NLS</msgCatalog>
+	</msgDataElement>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2007-12-05T02:52:54.070Z" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>1</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>10</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>AUDIT</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>850</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.ws.sm.workspace.impl.WorkSpaceManagerImpl</values>
+	</extendedDataElements>
+	<sourceComponentId component="Logging" componentIdType="Application" executionEnvironment="Java" location="10.1.6.121" locationType="IPV4" subComponent="Logger" componentType="Logging_Application"/>
+	<msgDataElement>
+		<msgCatalogId>WKSP0023I: Workspace configuration consistency check is disabled.</msgCatalogId>
+		<msgCatalogType>Java</msgCatalogType>
+		<msgCatalog>com.ibm.ws.sm.workspace.impl.workspace_NLS</msgCatalog>
+	</msgDataElement>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2007-12-05T02:52:54.539Z" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>2</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>10</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>WARNING</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>900</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.ws.management.application.sync.AppBinaryProcessor</values>
+	</extendedDataElements>
+	<sourceComponentId component="Logging" componentIdType="Application" executionEnvironment="Java" location="10.1.6.121" locationType="IPV4" subComponent="Logger" componentType="Logging_Application"/>
+	<msgDataElement>
+		<msgCatalogTokens value="java.lang.ClassNotFoundException: com.ibm.ws.security.authorize.AppInstallNotify&#xD;&#xA;&#x9;at java.lang.Class.forNameImpl(Native Method)&#xD;&#xA;&#x9;at java.lang.Class.forName(Class.java:115)&#xD;&#xA;&#x9;at com.ibm.ws.management.application.sync.AppBinaryProcessor.&lt;init&gt;(AppBinaryProcessor.java:173)&#xD;&#xA;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#xD;&#xA;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:80)&#xD;&#xA;&#x9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:44)&#xD;&#xA;&#x9;at java.lang.reflect.Constructor.newInstance(Constructor.java:315)&#xD;&#xA;&#x9;at com.ibm.ws.management.repository.FileRepository.initialize(FileRepository.java:219)&#xD;&#xA;&#x9;at com.ibm.ws.management.repository.client.LocalConfigRepositoryClient.connect(LocalConfigRepositoryClient.java:55)&#xD;&#xA;&#x9;at com.ibm.websphere.management.repository.client.ConfigRepositoryClientFactory.getConfigRepositoryClient(ConfigRepositoryClientFactory.java:48)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceMasterRepositoryAdapter.getRepository(WorkSpaceMasterRepositoryAdapter.java:185)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceMasterRepositoryAdapter.getDefaultRepository(WorkSpaceMasterRepositoryAdapter.java:174)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceMasterRepositoryAdapter.getDefaultMetaData(WorkSpaceMasterRepositoryAdapter.java:136)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceMasterRepositoryAdapter.getMetaData(WorkSpaceMasterRepositoryAdapter.java:1009)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.metadata.RepositoryMetaDataFactory.getMetaData(RepositoryMetaDataFactory.java:106)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.metadata.RepositoryMetaDataFactory.getMetaData(RepositoryMetaDataFactory.java:92)&#xD;&#xA;&#x9;at com.ibm.ws.management.configarchive.ConfigArchiveRepositoryAdapter.getDefaultMetaData(ConfigArchiveRepositoryAdapter.java:251)&#xD;&#xA;&#x9;at com.ibm.ws.management.configarchive.ConfigArchiveRepositoryAdapter.getMetaData(ConfigArchiveRepositoryAdapter.java:244)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.getMetaData(WorkSpaceImpl.java:104)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.getRootContextType(WorkSpaceImpl.java:305)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.createRootContext(WorkSpaceImpl.java:180)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.getRootContext(WorkSpaceImpl.java:295)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.restore(WorkSpaceImpl.java:431)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceManagerImpl.createWorkSpace(WorkSpaceManagerImpl.java:150)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceManagerImpl.getWorkSpace(WorkSpaceManagerImpl.java:186)&#xD;&#xA;&#x9;at com.ibm.ws.management.configarchive.ConfigArchiveComposer.loadConfigArchive(ConfigArchiveComposer.java:146)&#xD;&#xA;&#x9;at com.ibm.ws.management.configarchive.ApplicationConfiguratorImpl.&lt;init&gt;(ApplicationConfiguratorImpl.java:91)&#xD;&#xA;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#xD;&#xA;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:80)&#xD;&#xA;&#x9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:44)&#xD;&#xA;&#x9;at java.lang.reflect.Constructor.newInstance(Constructor.java:315)&#xD;&#xA;&#x9;at com.ibm.wsspi.configarchive.ApplicationConfigurator.getInstance(ApplicationConfigurator.java:42)&#xD;&#xA;&#x9;at com.ibm.ws.ast.st.enhanced.ear.internal.config.ApplicationConfiguratorModel.init(Unknown Source)&#xD;&#xA;&#x9;at com.ibm.ws.ast.st.enhanced.ear.internal.config.ApplicationConfiguratorModel.&lt;init&gt;(Unknown Source)&#xD;&#xA;&#x9;at com.ibm.ws.ast.st.enhanced.ear.ui.internal.editor.PageApplicationServer.createClient(Unknown Source)&#xD;&#xA;&#x9;at com.ibm.etools.emf.workbench.ui.custom.widgets.CommonPageForm.createInnerSections(Unknown Source)&#xD;&#xA;&#x9;at com.ibm.etools.emf.workbench.ui.presentation.EditModelMultiPageEditorPart.pageChange(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.part.MultiPageEditorPart$2.widgetSelected(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.notifyListeners(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.custom.CTabFolder.setSelection(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.custom.CTabFolder.onMouse(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.custom.CTabFolder$1.handleEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.internal.ide.IDEApplication.run(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.core.internal.runtime.PlatformActivator$1.run(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:273)&#xD;&#xA;&#x9;at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:129)&#xD;&#xA;&#x9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;&#xA;&#x9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:85)&#xD;&#xA;&#x9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:58)&#xD;&#xA;&#x9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:60)&#xD;&#xA;&#x9;at java.lang.reflect.Method.invoke(Method.java:391)&#xD;&#xA;&#x9;at org.eclipse.core.launcher.Main.basicRun(Main.java:185)&#xD;&#xA;&#x9;at org.eclipse.core.launcher.Main.run(Main.java:704)&#xD;&#xA;&#x9;at org.eclipse.core.launcher.Main.main(Main.java:688)&#xD;&#xA;"/>
+		<msgCatalogId>ADMA7012E</msgCatalogId>
+		<msgCatalogType>Java</msgCatalogType>
+		<msgCatalog>com.ibm.ws.management.resources.AppDeploymentMessages</msgCatalog>
+	</msgDataElement>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2007-12-05T02:52:55.039Z" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>3</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>10</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>AUDIT</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>850</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.ws.sm.workspace.impl.WorkSpaceManagerImpl</values>
+	</extendedDataElements>
+	<sourceComponentId component="Logging" componentIdType="Application" executionEnvironment="Java" location="10.1.6.121" locationType="IPV4" subComponent="Logger" componentType="Logging_Application"/>
+	<msgDataElement>
+		<msgCatalogId>WKSP0023I: Workspace configuration consistency check is enabled.</msgCatalogId>
+		<msgCatalogType>Java</msgCatalogType>
+		<msgCatalog>com.ibm.ws.sm.workspace.impl.workspace_NLS</msgCatalog>
+	</msgDataElement>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2007-12-05T15:55:28.583Z" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>1</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>10</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>AUDIT</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>850</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.ws.sm.workspace.impl.WorkSpaceManagerImpl</values>
+	</extendedDataElements>
+	<sourceComponentId component="Logging" componentIdType="Application" executionEnvironment="Java" location="10.1.6.121" locationType="IPV4" subComponent="Logger" componentType="Logging_Application"/>
+	<msgDataElement>
+		<msgCatalogId>WKSP0023I: Workspace configuration consistency check is disabled.</msgCatalogId>
+		<msgCatalogType>Java</msgCatalogType>
+		<msgCatalog>com.ibm.ws.sm.workspace.impl.workspace_NLS</msgCatalog>
+	</msgDataElement>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2007-12-05T15:55:28.724Z" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>2</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>10</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>WARNING</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>900</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.ws.management.application.sync.AppBinaryProcessor</values>
+	</extendedDataElements>
+	<sourceComponentId component="Logging" componentIdType="Application" executionEnvironment="Java" location="10.1.6.121" locationType="IPV4" subComponent="Logger" componentType="Logging_Application"/>
+	<msgDataElement>
+		<msgCatalogTokens value="java.lang.ClassNotFoundException: com.ibm.ws.security.authorize.AppInstallNotify&#xD;&#xA;&#x9;at java.lang.Class.forNameImpl(Native Method)&#xD;&#xA;&#x9;at java.lang.Class.forName(Class.java:115)&#xD;&#xA;&#x9;at com.ibm.ws.management.application.sync.AppBinaryProcessor.&lt;init&gt;(AppBinaryProcessor.java:173)&#xD;&#xA;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#xD;&#xA;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:80)&#xD;&#xA;&#x9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:44)&#xD;&#xA;&#x9;at java.lang.reflect.Constructor.newInstance(Constructor.java:315)&#xD;&#xA;&#x9;at com.ibm.ws.management.repository.FileRepository.initialize(FileRepository.java:219)&#xD;&#xA;&#x9;at com.ibm.ws.management.repository.client.LocalConfigRepositoryClient.connect(LocalConfigRepositoryClient.java:55)&#xD;&#xA;&#x9;at com.ibm.websphere.management.repository.client.ConfigRepositoryClientFactory.getConfigRepositoryClient(ConfigRepositoryClientFactory.java:48)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceMasterRepositoryAdapter.getRepository(WorkSpaceMasterRepositoryAdapter.java:185)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceMasterRepositoryAdapter.getDefaultRepository(WorkSpaceMasterRepositoryAdapter.java:174)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceMasterRepositoryAdapter.getDefaultMetaData(WorkSpaceMasterRepositoryAdapter.java:136)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceMasterRepositoryAdapter.getMetaData(WorkSpaceMasterRepositoryAdapter.java:1009)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.metadata.RepositoryMetaDataFactory.getMetaData(RepositoryMetaDataFactory.java:106)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.metadata.RepositoryMetaDataFactory.getMetaData(RepositoryMetaDataFactory.java:92)&#xD;&#xA;&#x9;at com.ibm.ws.management.configarchive.ConfigArchiveRepositoryAdapter.getDefaultMetaData(ConfigArchiveRepositoryAdapter.java:251)&#xD;&#xA;&#x9;at com.ibm.ws.management.configarchive.ConfigArchiveRepositoryAdapter.getMetaData(ConfigArchiveRepositoryAdapter.java:244)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.getMetaData(WorkSpaceImpl.java:104)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.getRootContextType(WorkSpaceImpl.java:305)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.createRootContext(WorkSpaceImpl.java:180)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.getRootContext(WorkSpaceImpl.java:295)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.restore(WorkSpaceImpl.java:431)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceManagerImpl.createWorkSpace(WorkSpaceManagerImpl.java:150)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceManagerImpl.getWorkSpace(WorkSpaceManagerImpl.java:186)&#xD;&#xA;&#x9;at com.ibm.ws.management.configarchive.ConfigArchiveComposer.loadConfigArchive(ConfigArchiveComposer.java:146)&#xD;&#xA;&#x9;at com.ibm.ws.management.configarchive.ApplicationConfiguratorImpl.&lt;init&gt;(ApplicationConfiguratorImpl.java:91)&#xD;&#xA;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#xD;&#xA;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:80)&#xD;&#xA;&#x9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:44)&#xD;&#xA;&#x9;at java.lang.reflect.Constructor.newInstance(Constructor.java:315)&#xD;&#xA;&#x9;at com.ibm.wsspi.configarchive.ApplicationConfigurator.getInstance(ApplicationConfigurator.java:42)&#xD;&#xA;&#x9;at com.ibm.ws.ast.st.enhanced.ear.internal.config.ApplicationConfiguratorModel.init(Unknown Source)&#xD;&#xA;&#x9;at com.ibm.ws.ast.st.enhanced.ear.internal.config.ApplicationConfiguratorModel.&lt;init&gt;(Unknown Source)&#xD;&#xA;&#x9;at com.ibm.ws.ast.st.enhanced.ear.ui.internal.editor.PageApplicationServer.createClient(Unknown Source)&#xD;&#xA;&#x9;at com.ibm.etools.emf.workbench.ui.custom.widgets.CommonPageForm.createInnerSections(Unknown Source)&#xD;&#xA;&#x9;at com.ibm.etools.emf.workbench.ui.presentation.EditModelMultiPageEditorPart.pageChange(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.part.MultiPageEditorPart$2.widgetSelected(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.notifyListeners(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.custom.CTabFolder.setSelection(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.custom.CTabFolder.onMouse(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.custom.CTabFolder$1.handleEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.internal.ide.IDEApplication.run(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.core.internal.runtime.PlatformActivator$1.run(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:273)&#xD;&#xA;&#x9;at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:129)&#xD;&#xA;&#x9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;&#xA;&#x9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:85)&#xD;&#xA;&#x9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:58)&#xD;&#xA;&#x9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:60)&#xD;&#xA;&#x9;at java.lang.reflect.Method.invoke(Method.java:391)&#xD;&#xA;&#x9;at org.eclipse.core.launcher.Main.basicRun(Main.java:185)&#xD;&#xA;&#x9;at org.eclipse.core.launcher.Main.run(Main.java:704)&#xD;&#xA;&#x9;at org.eclipse.core.launcher.Main.main(Main.java:688)&#xD;&#xA;"/>
+		<msgCatalogId>ADMA7012E</msgCatalogId>
+		<msgCatalogType>Java</msgCatalogType>
+		<msgCatalog>com.ibm.ws.management.resources.AppDeploymentMessages</msgCatalog>
+	</msgDataElement>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2007-12-05T17:44:56.700Z" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>3</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>10</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>AUDIT</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>850</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.ws.sm.workspace.impl.WorkSpaceManagerImpl</values>
+	</extendedDataElements>
+	<sourceComponentId component="Logging" componentIdType="Application" executionEnvironment="Java" location="10.1.6.121" locationType="IPV4" subComponent="Logger" componentType="Logging_Application"/>
+	<msgDataElement>
+		<msgCatalogId>WKSP0023I: Workspace configuration consistency check is disabled.</msgCatalogId>
+		<msgCatalogType>Java</msgCatalogType>
+		<msgCatalog>com.ibm.ws.sm.workspace.impl.workspace_NLS</msgCatalog>
+	</msgDataElement>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2007-12-05T17:44:56.856Z" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>4</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>10</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>AUDIT</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>850</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.ws.sm.workspace.impl.WorkSpaceManagerImpl</values>
+	</extendedDataElements>
+	<sourceComponentId component="Logging" componentIdType="Application" executionEnvironment="Java" location="10.1.6.121" locationType="IPV4" subComponent="Logger" componentType="Logging_Application"/>
+	<msgDataElement>
+		<msgCatalogId>WKSP0023I: Workspace configuration consistency check is enabled.</msgCatalogId>
+		<msgCatalogType>Java</msgCatalogType>
+		<msgCatalog>com.ibm.ws.sm.workspace.impl.workspace_NLS</msgCatalog>
+	</msgDataElement>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2007-12-28T15:31:00.565Z" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>2</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>10</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>AUDIT</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>850</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.ws.sm.workspace.impl.WorkSpaceManagerImpl</values>
+	</extendedDataElements>
+	<sourceComponentId component="Logging" componentIdType="Application" executionEnvironment="Java" location="10.1.6.121" locationType="IPV4" subComponent="Logger" componentType="Logging_Application"/>
+	<msgDataElement>
+		<msgCatalogId>WKSP0023I: Workspace configuration consistency check is disabled.</msgCatalogId>
+		<msgCatalogType>Java</msgCatalogType>
+		<msgCatalog>com.ibm.ws.sm.workspace.impl.workspace_NLS</msgCatalog>
+	</msgDataElement>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2007-12-28T15:31:00.940Z" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>3</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>10</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>WARNING</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>900</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.ws.management.application.sync.AppBinaryProcessor</values>
+	</extendedDataElements>
+	<sourceComponentId component="Logging" componentIdType="Application" executionEnvironment="Java" location="10.1.6.121" locationType="IPV4" subComponent="Logger" componentType="Logging_Application"/>
+	<msgDataElement>
+		<msgCatalogTokens value="java.lang.ClassNotFoundException: com.ibm.ws.security.authorize.AppInstallNotify&#xD;&#xA;&#x9;at java.lang.Class.forNameImpl(Native Method)&#xD;&#xA;&#x9;at java.lang.Class.forName(Class.java:115)&#xD;&#xA;&#x9;at com.ibm.ws.management.application.sync.AppBinaryProcessor.&lt;init&gt;(AppBinaryProcessor.java:173)&#xD;&#xA;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#xD;&#xA;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:80)&#xD;&#xA;&#x9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:44)&#xD;&#xA;&#x9;at java.lang.reflect.Constructor.newInstance(Constructor.java:315)&#xD;&#xA;&#x9;at com.ibm.ws.management.repository.FileRepository.initialize(FileRepository.java:219)&#xD;&#xA;&#x9;at com.ibm.ws.management.repository.client.LocalConfigRepositoryClient.connect(LocalConfigRepositoryClient.java:55)&#xD;&#xA;&#x9;at com.ibm.websphere.management.repository.client.ConfigRepositoryClientFactory.getConfigRepositoryClient(ConfigRepositoryClientFactory.java:48)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceMasterRepositoryAdapter.getRepository(WorkSpaceMasterRepositoryAdapter.java:185)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceMasterRepositoryAdapter.getDefaultRepository(WorkSpaceMasterRepositoryAdapter.java:174)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceMasterRepositoryAdapter.getDefaultMetaData(WorkSpaceMasterRepositoryAdapter.java:136)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceMasterRepositoryAdapter.getMetaData(WorkSpaceMasterRepositoryAdapter.java:1009)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.metadata.RepositoryMetaDataFactory.getMetaData(RepositoryMetaDataFactory.java:106)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.metadata.RepositoryMetaDataFactory.getMetaData(RepositoryMetaDataFactory.java:92)&#xD;&#xA;&#x9;at com.ibm.ws.management.configarchive.ConfigArchiveRepositoryAdapter.getDefaultMetaData(ConfigArchiveRepositoryAdapter.java:251)&#xD;&#xA;&#x9;at com.ibm.ws.management.configarchive.ConfigArchiveRepositoryAdapter.getMetaData(ConfigArchiveRepositoryAdapter.java:244)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.getMetaData(WorkSpaceImpl.java:104)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.getRootContextType(WorkSpaceImpl.java:305)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.createRootContext(WorkSpaceImpl.java:180)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.getRootContext(WorkSpaceImpl.java:295)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceImpl.restore(WorkSpaceImpl.java:431)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceManagerImpl.createWorkSpace(WorkSpaceManagerImpl.java:150)&#xD;&#xA;&#x9;at com.ibm.ws.sm.workspace.impl.WorkSpaceManagerImpl.getWorkSpace(WorkSpaceManagerImpl.java:186)&#xD;&#xA;&#x9;at com.ibm.ws.management.configarchive.ConfigArchiveComposer.loadConfigArchive(ConfigArchiveComposer.java:146)&#xD;&#xA;&#x9;at com.ibm.ws.management.configarchive.ApplicationConfiguratorImpl.&lt;init&gt;(ApplicationConfiguratorImpl.java:91)&#xD;&#xA;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#xD;&#xA;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:80)&#xD;&#xA;&#x9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:44)&#xD;&#xA;&#x9;at java.lang.reflect.Constructor.newInstance(Constructor.java:315)&#xD;&#xA;&#x9;at com.ibm.wsspi.configarchive.ApplicationConfigurator.getInstance(ApplicationConfigurator.java:42)&#xD;&#xA;&#x9;at com.ibm.ws.ast.st.enhanced.ear.internal.config.ApplicationConfiguratorModel.init(Unknown Source)&#xD;&#xA;&#x9;at com.ibm.ws.ast.st.enhanced.ear.internal.config.ApplicationConfiguratorModel.&lt;init&gt;(Unknown Source)&#xD;&#xA;&#x9;at com.ibm.ws.ast.st.enhanced.ear.ui.internal.editor.PageApplicationServer.createClient(Unknown Source)&#xD;&#xA;&#x9;at com.ibm.etools.emf.workbench.ui.custom.widgets.CommonPageForm.createInnerSections(Unknown Source)&#xD;&#xA;&#x9;at com.ibm.etools.emf.workbench.ui.presentation.EditModelMultiPageEditorPart.pageChange(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.part.MultiPageEditorPart$2.widgetSelected(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.notifyListeners(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.custom.CTabFolder.setSelection(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.custom.CTabFolder.onMouse(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.custom.CTabFolder$1.handleEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.ui.internal.ide.IDEApplication.run(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.core.internal.runtime.PlatformActivator$1.run(Unknown Source)&#xD;&#xA;&#x9;at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:273)&#xD;&#xA;&#x9;at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:129)&#xD;&#xA;&#x9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;&#xA;&#x9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:85)&#xD;&#xA;&#x9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:58)&#xD;&#xA;&#x9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:60)&#xD;&#xA;&#x9;at java.lang.reflect.Method.invoke(Method.java:391)&#xD;&#xA;&#x9;at org.eclipse.core.launcher.Main.basicRun(Main.java:185)&#xD;&#xA;&#x9;at org.eclipse.core.launcher.Main.run(Main.java:704)&#xD;&#xA;&#x9;at org.eclipse.core.launcher.Main.main(Main.java:688)&#xD;&#xA;"/>
+		<msgCatalogId>ADMA7012E</msgCatalogId>
+		<msgCatalogType>Java</msgCatalogType>
+		<msgCatalog>com.ibm.ws.management.resources.AppDeploymentMessages</msgCatalog>
+	</msgDataElement>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2007-12-31T14:48:37.878Z" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>1</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>10</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>INFO</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>800</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>org.apache.coyote.http11.Http11Protocol</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sourceClassName" type="string">
+		<values>org.apache.coyote.http11.Http11Protocol</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sourceMethodName" type="string">
+		<values>init</values>
+	</extendedDataElements>
+	<sourceComponentId component="Logging" componentIdType="Application" executionEnvironment="Java" location="10.1.6.121" locationType="IPV4" subComponent="Logger" componentType="Logging_Application"/>
+	<msgDataElement>
+		<msgCatalogId>Initializing Coyote HTTP/1.1 on port 53908</msgCatalogId>
+	</msgDataElement>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2007-12-31T14:48:37.971Z" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>2</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>10</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>INFO</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>800</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>org.apache.coyote.http11.Http11Protocol</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sourceClassName" type="string">
+		<values>org.apache.coyote.http11.Http11Protocol</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sourceMethodName" type="string">
+		<values>start</values>
+	</extendedDataElements>
+	<sourceComponentId component="Logging" componentIdType="Application" executionEnvironment="Java" location="10.1.6.121" locationType="IPV4" subComponent="Logger" componentType="Logging_Application"/>
+	<msgDataElement>
+		<msgCatalogId>Starting Coyote HTTP/1.1 on port 53908</msgCatalogId>
+	</msgDataElement>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2008-11-25T15:04:50.554Z" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>0</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>10</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>INFO</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>800</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>org.apache.coyote.http11.Http11Protocol</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sourceClassName" type="string">
+		<values>org.apache.coyote.http11.Http11Protocol</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sourceMethodName" type="string">
+		<values>init</values>
+	</extendedDataElements>
+	<sourceComponentId component="Logging" componentIdType="Application" executionEnvironment="Java" location="10.1.11.178" locationType="IPV4" subComponent="Logger" componentType="Logging_Application"/>
+	<msgDataElement>
+		<msgCatalogId>Initializing Coyote HTTP/1.1 on port 52224</msgCatalogId>
+	</msgDataElement>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2008-11-25T15:04:50.632Z" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>1</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>10</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>INFO</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>800</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>org.apache.coyote.http11.Http11Protocol</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sourceClassName" type="string">
+		<values>org.apache.coyote.http11.Http11Protocol</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sourceMethodName" type="string">
+		<values>start</values>
+	</extendedDataElements>
+	<sourceComponentId component="Logging" componentIdType="Application" executionEnvironment="Java" location="10.1.11.178" locationType="IPV4" subComponent="Logger" componentType="Logging_Application"/>
+	<msgDataElement>
+		<msgCatalogId>Starting Coyote HTTP/1.1 on port 52224</msgCatalogId>
+	</msgDataElement>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>

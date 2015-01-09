@@ -1,0 +1,10 @@
+#Wed Apr 02 12:42:56 EST 2008
+ENABLED_DECORATORS=com.ibm.etools.ejb.ui.decorators.J2EEProjectDecorator\:false,org.eclipse.ui.views.navigator.resource.decorator\:true,org.eclipse.ui.views.navigator.java.decorator\:true,com.rational.resourcemanagement.cmui.decorator\:true,com.ibm.etools.ejb.ui.java.decorator\:true,com.ibm.rational.test.ct.ui.navigator.execution.decorator\:true,com.ibm.wtp.ejb.ui.beanJavaAnnotationBeanDecorator\:true,com.ibm.wtp.ejb.ui.enterpriseBeanAnnotationBeanDecorator\:true,org.eclipse.hyades.test.ui.internal.navigator.ExecutionHTNDecorator\:true,org.eclipse.jdt.ui.override.decorator\:true,org.eclipse.pde.ui.binaryProjectDecorator\:false,org.eclipse.team.cvs.ui.decorator\:true,org.eclipse.ui.LinkedResourceDecorator\:true,
+UIActivities.org.eclipse.team=true
+UIActivities.test.core=true
+UIActivities.com.ibm.rational.test.ct.ws=true
+UIActivities.com.ibm.wtp.webservices=true
+UIActivities.com.ibm.etools.struts.activity=true
+UIActivities.org.eclipse.team.cvs=true
+eclipse.preferences.version=1
+UIActivities.com.ibm.rational.test.ct.java=true

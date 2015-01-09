@@ -1,0 +1,13 @@
+#Thu Dec 13 10:41:06 EST 2007
+print.margin.bottom=0.5
+print.margin.top=0.5
+print.page.height=11.0
+print.usePortrait=true
+snaptogrid=true
+print.margin.left=0.5
+print.margin.right=0.5
+print.page.size=Letter
+print.useInches=true
+print.useWorkspaceSettings=true
+print.page.width=8.5
+zoom=1.0

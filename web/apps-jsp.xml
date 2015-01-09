@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<webapps>
+    <!-- Setting special properties for /examples
+         ( as an example of overriding the defaults )
+      -->
+
+
+	<!--  jsw is adding the following for web home -->
+	<Context path="/jsp"
+		docBase="d:\Steve\web\jsp"
+		debug="1"
+		reloadable="ture" >
+	</Context>
+
+</webapps>

@@ -1,0 +1,5 @@
+#Thu Oct 23 15:28:37 EDT 2008
+version=5.0.1
+connection=Facets|facets_dvlp_01|faoper|encoded\:AAADAwQEBgcKCQgLCAkOCxQREhMUFRYfCBkKCwwNPj8AAQIDZGVmZygpKissLS4v|CPSDVLP|jdbc\:sybase\:Tds\:CPSDVLP\:12075/facets_dvlp_01|com.sybase.jdbc2.jdbc.SybDriver|C\:\\sybase\\JS-12_5\\lib\\jconn2.jar|SYBASE_V125_Domain.xmi\#JDBCDriver_2|\#Properties|C\:\\Program Files\\IBM\\Rational\\SDP\\6.0\\eclipse\\jre|null|null|null|15|1\:SCHEMA\:NOT LIKE\:dbo\:OR
+eclipse.preferences.version=1
+DEFAULT_VENDOR_TYPE=25

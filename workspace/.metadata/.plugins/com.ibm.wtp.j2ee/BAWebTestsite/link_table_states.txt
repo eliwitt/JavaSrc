@@ -1,0 +1,14 @@
+/BAWebTestsite/WebContent/WEB-INF/StockQuote_mapping.xml
++
+/BAWebTestsite/WebContent/reoute2BA.jsp
++6
+/BAWebTestsite/.website-config
++
+/BAWebTestsite/WebContent/theme/Master.css
++6
+/BAWebTestsite/WebContent/WEB-INF/web.xml
++
+/BAWebTestsite/WebContent/WEB-INF/wsdl/StockQuote.wsdl
++
+/BAWebTestsite/WebContent/BAMainTest.jsp
++

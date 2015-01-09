@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java-wsdl-mapping xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://www.ibm.com/webservices/xsd/j2ee_jaxrpc_mapping_1_1.xsd">
+    <package-mapping>
+        <package-type>samples</package-type>
+        <namespaceURI>http://samples</namespaceURI>
+    </package-mapping>
+    <java-xml-type-mapping>
+        <java-type>float</java-type>
+        <root-type-qname xmlns:rtq="http://www.w3.org/2001/XMLSchema">rtq:float</root-type-qname>
+        <qname-scope>simpleType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>java.lang.String</java-type>
+        <root-type-qname xmlns:rtq="http://www.w3.org/2001/XMLSchema">rtq:string</root-type-qname>
+        <qname-scope>simpleType</qname-scope>
+    </java-xml-type-mapping>
+    <service-interface-mapping>
+        <service-interface>samples.StockQuoteService</service-interface>
+        <wsdl-service-name xmlns:sim="http://samples">sim:StockQuoteService</wsdl-service-name>
+        <port-mapping>
+            <port-name>StockQuote</port-name>
+            <java-port-name>StockQuote</java-port-name>
+        </port-mapping>
+    </service-interface-mapping>
+    <service-endpoint-interface-mapping>
+        <service-endpoint-interface>samples.StockQuote</service-endpoint-interface>
+        <wsdl-port-type xmlns:seimwpt="http://samples">seimwpt:StockQuote</wsdl-port-type>
+        <wsdl-binding xmlns:seimwb="http://samples">seimwb:StockQuoteSoapBinding</wsdl-binding>
+        <service-endpoint-method-mapping>
+            <java-method-name>getQuote</java-method-name>
+            <wsdl-operation>getQuote</wsdl-operation>
+            <wrapped-element></wrapped-element>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://samples">mppm:getQuoteRequest</wsdl-message>
+                    <wsdl-message-part-name>symbol</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>float</method-return-value>
+                <wsdl-message xmlns:wrvm="http://samples">wrvm:getQuoteResponse</wsdl-message>
+                <wsdl-message-part-name>getQuoteReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+    </service-endpoint-interface-mapping>
+</java-wsdl-mapping>

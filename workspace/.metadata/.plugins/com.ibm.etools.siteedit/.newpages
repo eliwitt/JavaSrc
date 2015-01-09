@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<newpages>
+    <project name="Ch3PizzaStoreEARWeb">
+        <item src="/WebContent/orderconfirm.jsp"/>
+        <item src="/WebContent/orderpage.jsp"/>
+    </project>
+<project name="eMemberPayWeb">
+        <item src="/WebContent/payConfirm.jsp"/>
+        <item src="/WebContent/subscriberPay.jsp"/>
+        <item src="/WebContent/subscriberInput.jsp"/>
+    </project>
+<project name="eTestProjectWeb">
+        <item src="/WebContent/displayMember.jsp"/>
+        <item src="/WebContent/startTest.jsp"/>
+    </project>
+<project name="StockQuote"/>
+<project name="StockQuoteClient">
+        <item src="/WebContent/MyStocks.jsp"/>
+    </project>
+<project name="BAWebTestsite">
+        <item src="/WebContent/reoute2BA.jsp"/>
+        <item src="/WebContent/BAMainTest.jsp"/>
+    </project>
+<project name="eCheckWeb">
+        <item src="/WebContent/checkAccount.jsp"/>
+        <item src="/WebContent/subscriberVerify.jsp"/>
+        <item src="/WebContent/subscriberReg.jsp"/>
+        <item src="/WebContent/subscriberPay.jsp"/>
+        <item src="/WebContent/subscriberInput.jsp"/>
+        <item src="/WebContent/subscriberCard.jsp"/>
+        <item src="/WebContent/payConfirm.jsp"/>
+    </project>
+</newpages>
